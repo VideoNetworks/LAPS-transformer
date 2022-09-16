@@ -74,16 +74,25 @@ kinetics400_mmlab
     |   |_...
     |_...
 ```
-3. Use train script (train.sh) to trian k400
+3. Use train script (train.sh under ./scripts) to trian k400
 ```
 #!/usr/bin/env python
 import os
+
+# Visformer_LAPS_8x8
+cmd = "python -u main_tokshift.py \
+               --multiprocessing-distributed --world-size 1 --rank 0 \
+               --dist-ur tcp://127.0.0.1:23677 \
+ 	       --tune_from pretrain/visformer_s_in22k.pth \
+               --cfg_file config/custom/k400/visformer/visformer_LAPS_8x8.yaml"
+os.system(cmd)
 
 cmd = "python -u main_tokshift.py \
                --multiprocessing-distributed --world-size 1 --rank 0 \
                --dist-ur tcp://127.0.0.1:23677 \
                --cfg_file config/custom/k400/tokshift_8x32_b16.yaml"
 os.system(cmd)
+
 ```
 ### Test with eval.sh
 ```
