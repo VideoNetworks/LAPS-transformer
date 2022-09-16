@@ -9,7 +9,7 @@ import torch
 import torch.nn as nn
 from timm.models.layers import trunc_normal_, DropPath
 from timm.models.registry import register_model
-from nat.natten import NeighborhoodAttention
+from natformer.natten import NeighborhoodAttention
 
 
 model_urls = {
