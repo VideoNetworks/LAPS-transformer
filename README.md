@@ -19,13 +19,13 @@ This is official implementation (ver2.0) of VideoNet, containing the following m
 - [Acknowledgement](#Acknowledgement)
 
 ## Updates
-### XX, XX, 2022
+### Sept. 16, 2022
 * Release LAPS to public.
 * Release this the 2nd version of TokShift to public.
 * Ver2 includes the following modifications:
   - Directly decode video mp4 file during training/evaluation
   - Change to adopt standarlize timm code-base.
-  - Performances are further improved than reported in paper version (average +0.5).
+  - Performances of TokShift are further improved than reported in paper version (average +0.5).
 
 ## Model Zoo and Baselines
 We present experimental comparion between verion 1.0 and 2.0 in [Model Zoo](MODEL_ZOO.md)
