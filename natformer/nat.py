@@ -221,7 +221,7 @@ class NAT(nn.Module):
 
 
 @register_model
-def nat_mini(pretrained=False, **kwargs):
+def nat_mini(pretrained=True, **kwargs):
     model = NAT(depths=[3, 4, 6, 5], num_heads=[2, 4, 8, 16], embed_dim=64, mlp_ratio=3,
                  drop_path_rate=0.2, kernel_size=7, **kwargs)
     if pretrained:

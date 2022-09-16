@@ -102,7 +102,7 @@ class VideoNet(nn.Module):
 			if self.net == 'nat':
 				print('=> base model: natformer, with backbone: {}'.format(backbone))
 				from natformer import nat
-				self.base_model = getattr(nat, backbone)(num_classes=self.num_class, pretrained=False)
+				self.base_model = getattr(nat, backbone)(num_classes=self.num_class, pretrained=True)
 			#######
 			self.feature_dim = self.num_class
 
