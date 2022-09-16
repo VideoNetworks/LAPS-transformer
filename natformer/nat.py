@@ -227,6 +227,8 @@ def nat_mini(pretrained=False, **kwargs):
     if pretrained:
         url = model_urls['nat_mini_1k']
         checkpoint = torch.hub.load_state_dict_from_url(url=url, map_location="cpu")
+        checkpoint.pop('head.weight')
+        checkpoint.pop('head.bias')
         model.load_state_dict(checkpoint)
     return model
 
