@@ -1,11 +1,11 @@
 # VideoNetworks (Version 2)
 This is official implementation (ver2.0) of VideoNet, containing the following models:
-* 2022 ACM Multimedia paper "LAPS: Long-term Leap Attention, short-term Periodic Shift for Video Classification" [`Paper link`](https://arxiv.org/abs/2207.05526).
+* 2022 ACM Multimedia Oral Paper "LAPS: Long-term Leap Attention, short-term Periodic Shift for Video Classification" [`Paper link`](https://arxiv.org/abs/2207.05526).
 <div align="center">
   <img src="page/SACS.png" width="600px"/>
 </div>
 
-* 2021 ACM Multimedia paper "Token Shifit Transformer for Video Classification". We build an a pure-convolutional free video transformer and achieve SOTA performance 80.53% on Kinetics-400 [`Paper link`](https://arxiv.org/abs/2108.02432).
+* 2021 ACM Multimedia Paper "Token Shifit Transformer for Video Classification". We build an a pure-convolutional free video transformer and achieve SOTA performance 80.53% on Kinetics-400 [`Paper link`](https://arxiv.org/abs/2108.02432).
 <div align="center">
   <img src="page/tokshift.PNG" width="600px"/>
 </div>
