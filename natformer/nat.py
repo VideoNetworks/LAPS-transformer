@@ -229,7 +229,7 @@ def nat_mini(pretrained=False, **kwargs):
         checkpoint = torch.hub.load_state_dict_from_url(url=url, map_location="cpu")
         checkpoint.pop('head.weight')
         checkpoint.pop('head.bias')
-        model.load_state_dict(checkpoint)
+        model.load_state_dict(checkpoint, strict=False)
     return model
 
 
