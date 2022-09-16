@@ -98,6 +98,11 @@ class VideoNet(nn.Module):
 				self.base_model = getattr(models_LAPS, backbone)(num_classes=self.num_class, n_seg=self.num_segments, fold_div=self.fold_div, 
 						s2_skip_level=self.cfg.MODEL.S2_SKIP_LEVEL, 
 						s3_skip_level=self.cfg.MODEL.S3_SKIP_LEVEL)
+		elif 'nat_' in backbone:
+			if self.net == 'nat':
+				print('=> base model: natformer, with backbone: {}'.format(backbone))
+				from natformer import nat
+				self.base_model = getattr(nat, backbone)(num_classes=self.num_class, pretrained=True)
 			#######
 			self.feature_dim = self.num_class
 
