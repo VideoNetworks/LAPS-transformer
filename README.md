@@ -42,6 +42,7 @@ pip install -r requirements (or pip install -i https://pypi.tuna.tsinghua.edu.cn
 ### Training 
 1. Donwload Kinetics-400 datasets
 2. Re-organize the Kinetics-400 dataets in the following structure. ([structure files](page)), use rename.py to remove space " " in category name.
+3. Set-up Wandb according to https://docs.wandb.ai/quickstart#1.-set-up-wandb
 ```
 kinetics400_mmlab
 |_train.csv
