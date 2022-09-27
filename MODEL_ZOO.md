@@ -1,5 +1,5 @@
 # Model Zoo and Baselines
-We retrain all models with Version2.0, the value fluctuates normally without affecting conclusion. We change FLOPs measurement to fvcore tool, thereby slightly different from [`TokShift`](https://github.com/VideoNetworks/TokShift-Transformer), Pretrained-Weights [`Visformer_s_in22k.pth`](https://drive.google.com/file/d/1uPIMLDcMgMmj-Fp5q-cibIuf1Nebdhxu/view?usp=sharing)
+We retrain all models with Version2.0, the value fluctuates normally without affecting conclusion. We change FLOPs measurement to fvcore tool, thereby slightly different from [`TokShift`](https://github.com/VideoNetworks/TokShift-Transformer), Pretrained-Weights [`Visformer_s_in10k.pth`](https://drive.google.com/file/d/1uPIMLDcMgMmj-Fp5q-cibIuf1Nebdhxu/view?usp=sharing)
 ## LAPS on Kinetcis-400 val
 | Arch | Backbone |  Pretrain |  Res & Frames & Step| GFLOPs* x views| Params | Ver2.0 (top-1 Accuracy) | config |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ---------------------- | ------------- | ------------- |
