@@ -34,7 +34,10 @@ We present experimental comparion between verion 1.0 and 2.0 in [Model Zoo](MODE
 ```
 conda create -n tokshift python=3.7
 conda activate tokshift
+On V100:
 pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
+On A100:
+pip install torch==1.10.2+cu113 torchvision==0.11.3+cu113 torchaudio===0.10.2+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
 pip install -r requirements (or pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements)
 ```
 
